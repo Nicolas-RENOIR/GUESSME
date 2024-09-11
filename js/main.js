@@ -207,7 +207,7 @@
 }());
 
 function loadChallenge() {
-    fetch('.json/films.json')
+    fetch('json/films.json')
         .then(response => response.json())
         .then(challenges => {
             const today = new Date().toISOString().split('T')[0];
